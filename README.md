@@ -23,8 +23,3 @@ cd car-damage-detection
 pip install -r requirements.txt
 
 # python train.py --data path/to/images --epochs 50 --batch-size 16
-
-
-
-## CarDamage Dataset
-We are in the process of blurring the photos to prevent any privacy concerns. Once this is done, we will share them here. We appreciate your understanding and support.
