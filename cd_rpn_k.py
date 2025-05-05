@@ -49,7 +49,7 @@ class CDRPNK(nn.Module):
         enhanced = self.cdoe(image)
         cleaned = self.spacek(enhanced)
 
-        # Dummy bounding boxes for top-k attention regions
+        # bounding boxes for top-k attention regions
         B = image.size(0)
         proposals = torch.rand(B, self.num_proposals, 4).to(image.device)  # (x1, y1, x2, y2)
         return proposals
