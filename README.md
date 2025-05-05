@@ -15,27 +15,6 @@ Car damage detection in real-world environments is challenged by noise, lighting
 
 ---
 
-## 🧩 Modules
-
-### 1. `FeatureEncoder`
-- Based on pretrained backbones (e.g., ResNet50 via `timm`)
-- Extracts spatially rich feature maps
-
-### 2. `CD-RPN-K`
-- **CDOE**: Applies image transformations and luminance Gaussian filtering
-- **Space-K**: Reduces environmental noise like shadows and reflections using learnable filters
-- Proposes object-level crops for SwAV and detection
-
-### 3. `SwAVModule`
-- Learns self-supervised embeddings from the proposals
-- Clusters features to prototypes via contrastive learning
-
-### 4. `DETRHead`
-- Predicts bounding boxes and classes using transformer layers
-- Implements one-to-one matching between predicted and ground truth boxes using **Hungarian Matching** via a cost matrix
-
----
-
 ## 🛠️ Installation
 
 ```bash
